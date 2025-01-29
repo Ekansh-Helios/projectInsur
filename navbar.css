@@ -1,0 +1,143 @@
+/* General Styles for Navbar */
+.navbar{
+    background-color: white;
+    padding: 0;
+}
+
+.custom-navbar {
+    background-color: #7166F5; /* Background color of navbar */
+    width:106%; /* Full width of the container */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Vertically align content */
+    justify-content: space-between; /* Space between main navbar and phone contact */
+    clip-path: polygon(0% 0%, 96% 0%, 100% 100%, 0% 100%);
+    margin: auto;
+    border-radius: 0 59px 0 0;
+}
+
+/* Main Navbar (70% width) */
+.navbar-main {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Vertically align content */
+    justify-content: center; /* Center the logo and navbar items */
+    width: 70%; /* Take 70% width of the container */
+}
+.navbar-main::after {
+    content: '';
+    position: absolute;
+    top: 0; /* Align the triangle with the top of the bar */
+    right: -100px; /* Position the triangle outside the left bar */
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid #32557f;
+    border-right: 100px solid transparent;
+    border-radius: 6px;
+}
+
+/* Styling for the logo brand */
+.navbar-brand {
+    background-color: white; /* Background for the logo */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    height: 100%; /* Ensure the logo container fills the available height */
+    margin-left: 25px; /* Space between the logo and the navbar items */
+}
+
+.trapezoid-wrapper {
+    display: inline-block;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%); /* Trapezoid shape */
+    background-color: #7166F5; /* Background color for trapezoid */
+    box-shadow: 0px 4px 10px rgba(224, 12, 12, 0.2); /* Shadow effect */
+    padding: 5px; /* Optional padding inside the trapezoid */
+}
+/* Trapezoid Image Shape */
+.trapezoid-image {
+    width: 220px; /* Set width */
+    height: 73px; /* Set height */
+    object-fit: cover; /* Ensure the image fits within the trapezoid */
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%); /* Trapezoid shape */
+}
+
+/* Navbar Links Styling */
+.nav-link {
+    color: white; /* Link color */
+    font-weight: 500; /* Adjust link font weight */
+    padding: 0.5rem 1rem; /* Padding inside the links */
+}
+
+/* Change color on hover */
+.nav-link:hover {
+    color: #f8f9fa; /* Lighter color on hover */
+}
+
+/* Navbar Toggle Button */
+.navbar-toggler {
+    border-color: white; /* Button border color */
+}
+
+/* Ensure navbar items are aligned properly in collapsible menu */
+.navbar-collapse {
+    flex-grow: 1; /* Allow collapse items to take up space */
+    justify-content: flex-end; /* Align menu items to the right */
+}
+
+/* Custom Styles for Search and Cart Buttons */
+.d-flex {
+   padding-right: 40px;
+}
+.d-flex .btn {
+    border-radius: 5px; /* Rounded corners for buttons */
+    padding: 0px 25px; /* Button padding */
+}
+.me-2 {
+    margin-right: -1rem !important; /* Space between search and cart buttons */
+    padding-right: 0.5px !important;
+}
+
+.d-flex .btn:hover {
+    color: white; /* Change text color on hover */
+}
+
+/* Phone Contact Section (30% width) */
+.phone-contact {
+    width: 20%; /* Take 20% width of the container */
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Vertically align content */
+    justify-content: center; /* Center align the contact information */
+    background-color: white; /* White background for the phone contact */
+    padding: 10px; /* Padding for spacing */
+}
+
+.phone-contact .phone-icon {
+    font-size: 24px; /* Adjust icon size */
+    color: #7166F5; /* Icon color */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Styling for Text Containers in Phone Contact */
+.text-container {
+    color: #0d0d0e; /* Text color for the phone contact */
+}
+
+.text-up p {
+    font-size: 14px; /* Smaller font size for the "Emergency call" text */
+    margin: 0;
+}
+
+.text-down p {
+    font-size: 18px; /* Larger font size for the phone number */
+    margin: 0;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+

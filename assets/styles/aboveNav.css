@@ -1,0 +1,101 @@
+/* Top Bar Above Navbar */
+.top-bar {
+    background-color: #f8f9fa; /* Light background for top bar */
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between; /* Space between the two sections */
+    align-items: center;
+    height: 40px; /* Set the height for the top bar */
+}
+
+/* Left Section of Top Bar */
+.top-bar-left {
+    display: flex;
+    justify-content: space-between; /* Space between contact info and social media */
+    align-items: center;
+    width: 85%; /* Takes 70% of the top bar */
+    background-color: #211F38; /* Set background color for the left box */
+    height: 50px; /* Ensures height fits the parent container */
+    position: relative; /* Needed for positioning the triangle */
+}
+.top-bar-left::after {
+    content: '';
+    position: absolute;
+    top: 0; /* Align the triangle with the top of the bar */
+    right: -100px; /* Position the triangle outside the left bar */
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid #211F38; /* Triangle color */
+    border-right: 100px solid transparent; /* Right side transparent */
+    border-radius: 6px;
+}
+
+/* Contact Info Styling */
+.contact-info {
+    display: flex; /* Flex layout to place location and email side by side */
+    justify-content: center; /* Center align the items */
+    align-items: center; /* Vertically align the items */
+    margin: auto; /* Centers the contact info within the top-bar-left */
+}
+
+.location, .email {
+    display: flex; /* Flex layout for icon and text */
+    align-items: center; /* Align icon and text horizontally */
+    margin: 0 10px; /* Space between location/email */
+    font-size: 14px;
+    color: #737092;
+}
+
+.location i, .email i {
+    margin-right: 5px; /* Space between the icon and text */
+    color: #7166F5; /* Icon color */
+}
+
+/* Social Media Icons */
+.social-media-icons {
+    margin-top: 0px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end; /* Align icons to the right of the container */
+    align-items: center;
+    margin-right: 20px; /* Space between social media icons and contact info */
+}
+
+
+.social-icon {
+    font-size: 18px;
+    color: #f8f6f6;
+    padding: 4px;
+}
+
+.social-icon:hover {
+    color: #7166F5; /* Change color on hover */
+}
+
+/* Right Section of Top Bar */
+.top-bar-right {
+    width: 15%; /* Takes 30% of the top bar */
+    display: flex;
+    justify-content: center; /* Align promo box to the right */
+    background-color: #D0CCFF; /* Background color for the promo box */
+    height: 50px; /* Ensures height fits the parent container */
+}
+
+/* Promo Box Styling */
+.promo-box {
+    background-color: white; /* Background color of the box */
+    color: black; 
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    margin: auto; /* Centers the promo box within the top-bar-right */
+    text-align: center; /* Centers the text inside the promo box */
+}
+
+.promo-box p {
+    margin: 0; /* Remove default margin */
+    padding: 3px; /* Padding for spacing */
+    font-size: small; /* Smaller font size */
+}

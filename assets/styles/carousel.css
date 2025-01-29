@@ -1,0 +1,114 @@
+/* Carousel Container */
+.carousel-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 545px;
+    padding: 50px;
+    background: #f8f9fa; /* Light background */
+    background-image: url("../../assets/images/section1/Imagebg.png");
+    margin-right: -50px;
+}
+
+/* Left Side: Text Content */
+.carousel-text {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end; /* Align text to right */
+    padding-right: 50px;
+}
+
+.text-wrapper {
+    max-width: 400px;
+    text-align: left; /* Align text to right */
+}
+
+.carousel-text h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+.carousel-text p {
+    font-size: 18px;
+    color: #666;
+}
+
+.carousel-text .btn {
+    margin-top: 15px;
+}
+
+/* Right Side: Image */
+/* Right Side: Image Container */
+.carousel-image {
+    width: 50%;
+    position: relative; /* Establishes a positioning context */
+}
+
+/* New Image: Positioned on top */
+.new-image {
+    position: absolute; /* Position the new image absolutely */
+    top: 0; /* Position it at the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to perfectly center */
+    z-index: 2; /* Place it on top */
+    width: 100%; /* Adjust size */
+    height: auto;
+}
+
+/* Original Image */
+.carousel-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure it covers the container */
+    border-radius: 10px;
+    z-index: 1; /* Place the original image below the new image */
+}
+
+
+/* Position carousel controls on the left */
+.carousel-control-prev, 
+.carousel-control-next {
+    position: absolute;
+    left: 50px; /* Adjust this value for perfect positioning */
+    transform: translateY(-50%);
+    width: 40px; /* Adjust button width */
+    height: 40px; /* Adjust button height */
+    border-radius: 50%; /* Circular buttons */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent; /* Transparent background */
+    border: 2px solid black; /* Black border */
+}
+
+/* Space them on top of each other */
+.carousel-control-prev {
+    top: 46%;
+}
+
+.carousel-control-next {
+    top: 54%;
+}
+
+/* Custom FontAwesome Arrows */
+.carousel-control-prev span,
+.carousel-control-next span {
+    font-size: 16px;
+    color: black;
+}
+
+/* Hover Effect */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: black;
+}
+
+.carousel-control-prev:hover span,
+.carousel-control-next:hover span {
+    color: white;
+}
+
+.btn-primary {
+    background-color: #7166F5;
+}
