@@ -1,0 +1,172 @@
+/* Container to hold both left and right sections */
+.section-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px; /* Space between left and right */
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+/* Left Side */
+.left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 50%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* First Image - Smaller */
+.left-side .tilted-image:first-child img {
+    width: 101%;
+    position: absolute;
+    left: -88px;
+    top: -20px;
+}
+
+/* Second Image - Move below first */
+.left-side .tilted-image:nth-child(2) {
+    position: absolute;
+    top: 70%;
+    left: 39%;
+    transform: translate(-50%, -84px);
+    width: 40%;
+}
+
+/* 40+ Years Experience Section - Below First Image */
+.left-side .info {
+    position: absolute;
+    top: 80%;
+    left: 47%;
+    transform: translate(-180%, -30%) rotate(10deg);
+    width: 36%;
+    height: 26%;
+    border-radius: 10px;
+    padding: 38px;
+    background-color: #7166F5;
+    z-index: 10;
+    text-align: center;
+}
+
+.info h2 {
+    color: #ffffff;
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.info p {
+    color: #f1e3e3;
+    font-size: 16px;
+    margin: 0;
+    margin-top: -7px;
+}
+
+/* Right Side */
+.right-side {
+    width: 50%;
+    background: #ffffff;
+    padding: 20px 41px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.right-side h2 {
+    font-weight: bold;
+}
+
+/* About Section */
+.right-side p img {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Sub-sections in Right Side */
+.right-side div {
+    margin-bottom: 20px;
+    margin-left: 4px;
+}
+
+/* Feature Boxes */
+.feature-box-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.feature-box {
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+    position: relative;
+    /* Border between feature boxes */
+}
+
+.feature-box p {
+    padding-top: 20px;
+}
+
+.feature-box:first-child {
+    border-right: 2px solid #d0cee3; /* Border color */
+    padding-right: 20px; /* Space from border */
+}
+
+.feature-box h2 {
+    font-size: 20px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.feature-box h2 img {
+    margin-right: 17px;
+    width: 30px;
+}
+
+/* Checklist Items */
+.checklist {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #d0cee3; /* Border color */
+    padding: 5%;
+    border-radius: 10px;
+}
+
+.checklist p {
+    font-size: 15px;
+    margin-bottom: 0.5rem;
+}
+
+.checklist i {
+    color: #7166F5;
+    margin-right: 10px;
+}
+
+/* Button */
+.btn-primary {
+    width: 200px;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #211F38;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #5647e0;
+}
+
+/* Upper Image for any specific image */
+.upper-image {
+    margin-top: -45px;
+}

@@ -1,0 +1,107 @@
+/* Wrapper for services section */
+.services-wrapper {
+    width: 100%;
+    text-align: center;
+    margin-top: 20%;
+}
+
+/* Title Section */
+.title-section {
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left: 17%;
+}
+
+.main-title {
+    font-size: 18px;
+    color: #333;
+}
+
+.sub-title {
+    font-size: 27px;
+    font-weight: bold;
+    color: #000;
+    max-width: 27%;
+}
+
+/* Cards Container */
+.card-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 65%;
+    margin-left: 17%;
+}
+
+.card-float{
+    border-radius: 10px;
+}
+
+/* Individual Custom Card */
+.custom-card {
+    width: 32%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.custom-card:hover {
+    transform: scale(1.05);
+}
+
+/* Main Card Image */
+.card-main-img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Card Content */
+.card-content {
+    padding: 10px 0;
+}
+
+/* Card Header - Small Icon and Title */
+.card-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #7166f5;
+}
+
+/* Small Icon inside Card */
+.card-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+/* Card Heading */
+.card-heading {
+    margin-left: 22px;
+    font-size: 23px;
+    font-weight: bold;
+    color: #222;
+}
+
+/* Card Description */
+.card-description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .custom-card {
+        width: 90%;
+    }
+}
+
+
