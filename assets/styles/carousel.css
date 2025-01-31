@@ -1,26 +1,24 @@
-/* Carousel Container */
 .carousel-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 545px;
     padding: 50px;
-    background: #f8f9fa; /* Light background */
+    background: #f8f9fa;
     background-image: url("../../assets/images/section1/Imagebg.png");
     margin-right: -50px;
 }
 
-/* Left Side: Text Content */
 .carousel-text {
     width: 50%;
     display: flex;
-    justify-content: flex-end; /* Align text to right */
+    justify-content: flex-end;
     padding-right: 50px;
 }
 
 .text-wrapper {
     max-width: 400px;
-    text-align: left; /* Align text to right */
+    text-align: left;
 }
 
 .carousel-text h2 {
@@ -38,51 +36,44 @@
     margin-top: 15px;
 }
 
-/* Right Side: Image */
-/* Right Side: Image Container */
 .carousel-image {
     width: 50%;
-    position: relative; /* Establishes a positioning context */
+    position: relative;
 }
 
-/* New Image: Positioned on top */
 .new-image {
-    position: absolute; /* Position the new image absolutely */
-    top: 0; /* Position it at the top */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust to perfectly center */
-    z-index: 2; /* Place it on top */
-    width: 100%; /* Adjust size */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 100%;
     height: auto;
 }
 
-/* Original Image */
 .carousel-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure it covers the container */
+    object-fit: cover;
     border-radius: 10px;
-    z-index: 1; /* Place the original image below the new image */
+    z-index: 1;
 }
 
-
-/* Position carousel controls on the left */
 .carousel-control-prev, 
 .carousel-control-next {
     position: absolute;
-    left: 50px; /* Adjust this value for perfect positioning */
+    left: 50px;
     transform: translateY(-50%);
-    width: 40px; /* Adjust button width */
-    height: 40px; /* Adjust button height */
-    border-radius: 50%; /* Circular buttons */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: transparent; /* Transparent background */
-    border: 2px solid black; /* Black border */
+    background: transparent;
+    border: 2px solid black;
 }
 
-/* Space them on top of each other */
 .carousel-control-prev {
     top: 46%;
 }
@@ -91,14 +82,12 @@
     top: 54%;
 }
 
-/* Custom FontAwesome Arrows */
 .carousel-control-prev span,
 .carousel-control-next span {
     font-size: 16px;
     color: black;
 }
 
-/* Hover Effect */
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
     background-color: black;

@@ -1,4 +1,3 @@
-/* Custom style for floating middle card */
 .card-container {
     position: relative;
     background-color: #211F38;
@@ -8,14 +7,16 @@
 .col-md-3 {
     padding: 0;
 }
+
 .card {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow to all cards */
-    border-radius: 15px; /* Optional: Rounded corners for cards */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
 }
 
 .left-card {
     margin-right: -9px;
 }
+
 .right-card {
     margin-left: -9px;
 }
@@ -39,18 +40,16 @@
     color: #666;
 }
 
-/* Floating middle card */
 .floating-card {
     position: relative;
-    z-index: 1; /* Makes sure it floats above the other two cards */
-    transform: translateY(-20px); /* Slightly lifts the middle card above the others */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Optional: Adds more shadow to the floating card */
-    border-radius: 10px; /* Optional: Rounded corners for the card */
+    z-index: 1;
+    transform: translateY(-20px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
     background-color: #6154f1;
     padding: 10px;
 }
 
-/* Pseudo-element for background image */
 .floating-card::before {
     content: "";
     position: absolute;
@@ -58,33 +57,29 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../../assets/images/section1/Mask Group.png'); /* Your background image URL */
+    background-image: url('../../assets/images/section1/Mask Group.png');
     background-size: cover;
     background-position: center;
-    opacity: 0.1; /* Low opacity for background image */
-    z-index: -1; /* Puts the background behind the content */
-    border-radius: 10px; /* Optional: Rounded corners for the background image */
+    opacity: 0.1;
+    z-index: -1;
+    border-radius: 10px;
 }
 
-/* Add card content on top of the image */
 .floating-card .card-body {
-    position: relative; /* Makes sure content is on top of the background image */
-    background-color: transparent; /* Semi-transparent background for text */
+    position: relative;
+    background-color: transparent;
     padding: 20px;
-    border-radius: 0 0 10px 10px; /* Optional: Rounded corners at the bottom */
+    border-radius: 0 0 10px 10px;
     color: white;
 }
+
 .floating-card .card-body .card-text {
     color: white;
 }
 
-
-
-
-
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .col-md-3 {
-        flex: 0 0 100%; /* Make each card take full width on mobile */
+        flex: 0 0 100%;
     }
 }
+

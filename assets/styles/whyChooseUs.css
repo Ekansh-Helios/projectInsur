@@ -1,0 +1,116 @@
+.why-choose-us {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    background-image: url('../../assets/images/section5/bg.png');
+    background-size: cover; /* This will make the image cover the entire container */
+    background-position: center;
+}
+
+.why-choose-us .left-side, .right-side {
+    flex: 1;
+    max-width: 50%;
+    padding: 0;
+    background: transparent;
+}
+
+.why-choose-us .left-side {
+}
+
+.why-choose-us .right-side {
+    padding: 0;
+    border-radius: 0;
+}
+
+.information {
+    max-width: 77%;
+    padding: 10%;
+    margin-right: -95px;
+}
+
+.information p {
+    font-size: 13px;
+    color: #fffdfd;
+}
+
+.information h1 {
+    font-size: 24px;
+    color: #fffdfd;
+}
+
+.save-money {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    background-color: #2d2b44;
+    padding: 4%;
+    border-radius: 14px;
+}
+
+.save-money-icon {
+    margin-bottom: 10%;
+}
+.save-money-icon p{
+    padding: 5%;
+}
+
+.save-money-left {
+    flex: 1;
+    align-items: center;
+}
+.save-money-right {
+    max-width: 50%;
+}
+
+.save-money-left div {
+    display: flex;
+    align-items: center;
+}
+
+.save-money-left img {
+    margin-right: 10px;
+    width: min-content;
+}
+
+.save-money-left p {
+    margin: 0;
+}
+
+.sec5-bottom .btn-primary {
+    background-color: #f8f9fa;
+    color: #141313;
+    border: none;
+    cursor: pointer;
+    max-width: 37%;
+    height: 20%;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 2%;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.why-choose-us .right-side img {
+    width: 100%;
+    margin-top: -1px;
+}
+
+.sec5-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec5-bottom h1{
+    padding-top: 4px;
+    padding-left: 20px;
+    padding-right: 0;
+    font-size: 40px;
+}
+
+.sec5-bottom p{
+    margin: auto;
+    max-width: 27%;
+    color: #58587e;
+}

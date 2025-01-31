@@ -1,0 +1,125 @@
+.free-estimate-container{
+    background-image: url('../../assets/images/section7/BG.png');
+    background-size: cover; 
+    background-position: center;
+    padding: 9% 17%;
+}
+
+.free-estimate-title {
+    text-align: center;
+}
+
+.free-estimate-title p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 0;
+}
+.free-estimate-title h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #333;
+    max-width: 69%;
+    margin: 0 27%;
+    font-size: 30px;
+    font-weight: bold;
+}
+.insurance {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.navbar-insurance {
+    display: flex;
+}
+
+.navbar-insurance a {
+    text-decoration: none;
+    color: #575858;
+    background-color: white;
+    font-size: 14px;
+    padding: 11px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 0px 20px 0px 0px;
+}
+
+.navbar-insurance a.special-link{
+    background-color: #7166F5;
+    color: white;
+}
+
+.navbar-insurance a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.content-insu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.content-insu div {
+    flex: 1;
+    min-width: 300px;
+}
+
+.content-insu img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form .mb-3 {
+    margin-bottom: 15px;
+}
+
+form .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.progress {
+    height: 20px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: #007bff;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    line-height: 20px;
+    transition: width 0.6s ease;
+}
