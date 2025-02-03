@@ -21,6 +21,8 @@
     <link href="assets\styles\whyChooseUs.css" rel="stylesheet">
     <link href="assets\styles\testimonal.css" rel="stylesheet">
     <link href="assets\styles\insurance.css" rel="stylesheet">
+    <link href="assets\styles\teamMember.css" rel="stylesheet">
+    <link href="assets\styles\article.css" rel="stylesheet">
 </head>
 
 <body>
@@ -397,9 +399,9 @@
                         <p>Marketing Manager</p>
                     </div>
                 </div>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                        suffered alteration in some form, by injected humour, or randomised words which don't look
-                        even slightly believable.</p>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                    suffered alteration in some form, by injected humour, or randomised words which don't look
+                    even slightly believable.</p>
                 <div class="testimonial-card-footer">
                     <img src="assets/images/section6/stars.png" alt="Person1">
                     <img src="assets/images/section6/belowImage.png" alt="Person1" class="below-image">
@@ -413,19 +415,19 @@
                         <p>Web Developer</p>
                     </div>
                 </div>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                        suffered alteration in some form, by injected humour, or randomised words which don't look
-                        even slightly believable.</p>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                    suffered alteration in some form, by injected humour, or randomised words which don't look
+                    even slightly believable.</p>
                 <div class="testimonial-card-footer">
                     <img src="assets/images/section6/stars.png" alt="Person1">
                     <img src="assets/images/section6/belowImage.png" alt="Person1" class="below-image">
                 </div>
-            </div> 
+            </div>
         </div>
     </div>
 
     <!-- free estimate - Section7 -->
-     <div class="free-estimate-container">
+    <div class="free-estimate-container">
         <div class="free-estimate">
             <div class="free-estimate-title">
                 <p><img src="assets/images/section3/checked.png" alt="group-work"> Get a Free Estimate</p>
@@ -445,37 +447,131 @@
                     <div>
                         <form>
                             <div class="mb-3">
-                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                                    placeholder="Name">
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Full Name">
                             </div>
                             <div class="mb-3">
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                                    placeholder="Email">
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Email address">
                             </div>
                             <div class="mb-3">
-                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                                    placeholder="Phone">
+                                <select class="form-select" id="exampleSelect">
+                                    <option value="car">Subject Type Of Insurance</option>
+                                    <option value="life">Life Insurance</option>
+                                    <option value="home">Home Insurance</option>
+                                    <option value="health">Health Insurance</option>
+                                </select>
                             </div>
                             <div class="mb-3">
-                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                                    placeholder="Message">
-                            </div>
-                            <div class="mb-3">
-                                <label for="progress" class="form-label">Progress</label>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                <div class="label-container">
+                                    <label for="progress" class="form-label1">Limits of Balance:</label>
+                                    <label for="progress" class="form-label2">$4000</label>
                                 </div>
+                                <input type="range" class="form-range" id="progressRange" min="0" max="100" value="50"
+                                    oninput="updateRange(this.value)">
                             </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn btn-primary align-left">Get a Quote Now</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-     </div>
+    </div>
+
+    <!-- team members - Section8 -->
+    <div>
+        <div class="team-members">
+            <div class="team-members-title">
+                <p><img src="assets/images/section3/checked.png" alt="group-work"> Our Team Member</p>
+                <h1>Meet Our Experienced Team People</h1>
+            </div>
+            <div class="team-members-cards">
+                <div class="team-member-card">
+                    <i class="bi bi-share-fill share-icon"></i>
+                    <img src="assets/images/section8/team-7-1.jpg.png" alt="Team Member">
+                    <div class="team-member-info">
+                        <h5>Robert Smith</h5>
+                        <p>Marketing Manager</p>
+                    </div>
+                </div>
+                <div class="team-member-card">
+                    <i class="bi bi-share-fill share-icon"></i>
+                    <img src="assets/images/section8/team-7-2.jpg.png" alt="Team Member">
+                    <div class="team-member-info">
+                        <h5>Luna Martin</h5>
+                        <p>Web Developer</p>
+                    </div>
+                </div>
+                <div class="team-member-card">
+                    <i class="bi bi-share-fill share-icon"></i>
+                    <img src="assets/images/section8/team-7-3.jpg.png" alt="Team Member">
+                    <div class="team-member-info">
+                        <h5>John Doe</h5>
+                        <p>Web Designer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img src="assets\images\section8\Bg.png" alt="bg">
+    </div>
+
+    <!-- article - Section9 -->
+    <div class="article">
+        <div class="article-title">
+            <p><img src="assets/images/section3/checked.png" alt="group-work"> Article</p>
+            <h1>Latest News & Articles from the Blog Posts</h1>
+        </div>
+        <div class="article-cards">
+            <div class="article-card">
+                <img src="assets/images/section9/grp1.png" alt="Article">
+                <div class="article-card-info">
+                    <div>
+                        <p>2 Comment</p>
+                        <p>20 JAN</p>
+                    </div>
+                    <h5>How to Choose the Best Insurance Policy</h5>
+                </div>
+                <div>
+                    <p>Read More</p>
+                    <i class="bi bi-arrow-right"></i>
+                </div>
+            </div>
+            <div class="article-card">
+                <img src="assets/images/section9/grp2.png" alt="Article">
+                <div class="article-card-info">
+                    <div>
+                        <p>2 Comment</p>
+                        <p>20 JAN</p>
+                    </div>
+                    <h5>How to Choose the Best Insurance Policy</h5>
+                </div>
+                <div>
+                    <p>Read More</p>
+                    <i class="bi bi-arrow-right"></i>
+                </div>
+            </div>
+            <div class="article-card">
+                <img src="assets/images/section9/grp3.png" alt="Article">
+                <div class="article-card-info">
+                    <div>
+                        <p>2 Comment</p>
+                        <p>20 JAN</p>
+                    </div>
+                    <h5>How to Choose the Best Insurance Policy</h5>
+                </div>
+                <div>
+                    <p>Read More</p>
+                    <i class="bi bi-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/scripts/progressBar.js"></script>
 </body>
 
 </html>

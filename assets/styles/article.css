@@ -1,0 +1,86 @@
+.article {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.article-title p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #333;
+}
+
+.article-title p img {
+    margin-right: 10px;
+}
+
+.article-title h1 {
+    margin: 20px 0;
+    font-size: 32px;
+    color: #333;
+    font-weight: bold;
+    max-width: 36%;
+    margin: 0 auto;
+}
+
+.article-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.article-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: left;
+    position: relative;
+}
+
+.article-card img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.article-card-info {
+    margin-bottom: 15px;
+}
+
+.article-card-info div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.article-card-info h5 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.article-card div:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article-card div:last-child p {
+    margin: 0;
+    font-size: 14px;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.article-card div:last-child i {
+    font-size: 18px;
+    color: #007bff;
+    cursor: pointer;
+}
