@@ -2,6 +2,9 @@
     padding: 50px 20px;
     background-color: #f9f9f9;
     text-align: center;
+    width: 100%; /* Ensure the container takes up 100% of the screen width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin-bottom: 11%;
 }
 
 .article-title p {
@@ -20,8 +23,7 @@
     margin: 20px 0;
     font-size: 32px;
     color: #333;
-    font-weight: bold;
-    max-width: 36%;
+    max-width: 34%;
     margin: 0 auto;
 }
 
@@ -40,47 +42,115 @@
     max-width: 300px;
     text-align: left;
     position: relative;
+    overflow: visible; /* Ensure the half-size div doesn't overflow the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .article-card img {
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
     width: 100%;
     height: auto;
     object-fit: cover;
-    margin-bottom: 15px;
+}
+
+.article-half-size {
+    position: absolute;
+    bottom: -30%;
+    left: 47%;
+    transform: translateX(-50%);
+    width: 95%;
+    background-color: white;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 10px 10px;
+    transition: background-color 0.3s ease;
 }
 
 .article-card-info {
     margin-bottom: 15px;
 }
 
+.article-card-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #5b4deb;
+    padding: 9px 0 0 25px;
+}
+
 .article-card-info div {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    position: relative;
+    padding-bottom: 0px;
+    margin-bottom: -8px;
 }
 
 .article-card-info h5 {
     margin: 0;
     font-size: 18px;
+    font-weight: bold;
     color: #333;
+    padding: 7px 0 0 18px;
 }
 
-.article-card div:last-child {
+.article-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%; /* Ensure the div takes up the full width of its parent */
+    margin-top: 10px; /* Add some spacing from the content above */
+    background-color: #737092;
+    padding: 10px 12px;
+    border-radius: 0 0 10px 0;
 }
 
-.article-card div:last-child p {
+.article-bottom p {
     margin: 0;
     font-size: 14px;
-    color: #007bff;
+    color: #f9f9fa;
     cursor: pointer;
+    transition: color 0.3s ease;
 }
 
-.article-card div:last-child i {
+.article-bottom p:hover {
+    color: #f8f9fa;
+}
+
+.article-bottom i {
     font-size: 18px;
-    color: #007bff;
+    color: #f7f8fa;
     cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.article-bottom i:hover {
+    color: #f9fafc;
+}
+
+.up {
+    position: absolute;
+    top: -26px;
+    right: 0;
+    background-color: #fff;
+    padding: 11px 14px;
+    border-radius: 27px 27px 0 0;
+    font-size: 12px;
+    color: #333;
+    box-sizing: border-box;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.up p {
+    padding: 0 ; /* Ensure padding is applied */
+    margin: 0; 
+    color: black; /* Remove any default margin */
+    font-weight: bold;
 }
