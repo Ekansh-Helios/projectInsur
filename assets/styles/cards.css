@@ -2,8 +2,14 @@
     position: relative;
     background-color: #211F38;
     overflow: visible;
+    padding-top: 6%;
 }
 
+.card-o{
+    position: relative;
+    bottom: -70px;
+    margin-bottom: 10%;
+}
 .col-md-3 {
     padding: 0;
 }

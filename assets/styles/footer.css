@@ -14,7 +14,7 @@
     display: flex;
     gap: 32px;
     padding: 20px 86px;
-    padding-left: 11%;
+    justify-content: center;
     margin-bottom: 7%;
 }
 
@@ -137,6 +137,7 @@
 .right-f {
     display: flex;
     gap: 47px;
+    max-width: fit-content;
 }
 
 .right-f .explore, .right-f .gallery {
@@ -183,6 +184,7 @@
 .b-sub {
     max-width: fit-content;
     background-color: #7166F5;
+    border-radius: 0 5px 5px 0 !important;
 }
 
 .left p {

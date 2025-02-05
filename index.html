@@ -13,11 +13,11 @@
     <!-- Custom CSS -->
     <link href="styles.css" rel="stylesheet">
     <link href="assets\styles\aboveNav.css" rel="stylesheet">
-    <link href="navbar.css" rel="stylesheet">
+    <link href="assets\styles\navbar.css" rel="stylesheet">
     <link href="assets\styles\carousel.css" rel="stylesheet">
     <link href="assets\styles\cards.css" rel="stylesheet">
-    <link href="assets\styles\tilted.css" rel="stylesheet">
-    <link href="assets\styles\cardsCarousel.css" rel="stylesheet">
+    <link href="assets\styles\aboutUs.css" rel="stylesheet">
+    <link href="assets\styles\services.css" rel="stylesheet">
     <link href="assets\styles\whyChooseUs.css" rel="stylesheet">
     <link href="assets\styles\testimonal.css" rel="stylesheet">
     <link href="assets\styles\insurance.css" rel="stylesheet">
@@ -61,15 +61,8 @@
         <!-- main navbar -->
         <div class="container-fluid custom-navbar">
             <div class="trapezoid-wrapper">
-                <a class="navbar-brand trapezoid-image" href="#">
                     <img src="assets/images/logo.png" alt="Logo">
-                </a>
             </div>
-            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button> -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link " href="#">Home</a></li>
@@ -79,20 +72,20 @@
                     <li class="nav-item"><a class="nav-link" href="#">Team</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <button class="btn me-2" type="submit">
-                        <i class="bi bi-search"></i>
-                    </button>
-                    <button class="btn" type="button">
-                        <i class="bi bi-cart"></i>
-                    </button>
-                </form>
             </div>
+        </div>
+        <div class="d-flex" role="search">
+            <button class="btn me-2" type="submit">
+                <i class="bi bi-search"></i>
+            </button>
+            <button class="btn" type="button">
+                <i class="bi bi-cart"></i>
+            </button>
         </div>
         <!-- phone contact -->
         <div class="phone-contact">
             <div class="phone-icon">
-                <i class="bi bi-telephone-fill"></i> <!-- Bootstrap phone icon -->
+                <img src="assets/images/footer/phone.png" alt="phone">
             </div>
             <div>
                 <div class="text-container text-up">
@@ -196,7 +189,7 @@
 
     <!-- 3 floating Cards - Section2 -->
     <div class="card-container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center card-o">
             <!-- Left Card -->
             <div class="col-md-3 left-card">
                 <div class="card">
@@ -242,7 +235,7 @@
         </div>
     </div>
 
-    <!-- 3 Tilted mages - Section3 -->
+    <!-- 3 About US - Section3 -->
     <div class="section-container">
         <!-- Left Side -->
         <div class="left-side">
@@ -290,7 +283,7 @@
         </div>
     </div>
 
-    <!-- cards carousel - Section4 -->
+    <!-- services - Section4 -->
     <div class="services-wrapper">
         <div class="title-section">
             <p class="main-title"><img src="assets/images/section3/checked.png" alt="Car Insurance"> Services</p>
@@ -404,7 +397,7 @@
                     suffered alteration in some form, by injected humour, or randomised words which don't look
                     even slightly believable.</p>
                 <div class="testimonial-card-footer">
-                    <img src="assets/images/section6/stars.png" alt="Person1">
+                    <img src="assets/images/section6/stars.png" alt="Person1" class="stars">
                     <img src="assets/images/section6/belowImage.png" alt="Person1" class="below-image">
                 </div>
             </div>
@@ -420,7 +413,7 @@
                     suffered alteration in some form, by injected humour, or randomised words which don't look
                     even slightly believable.</p>
                 <div class="testimonial-card-footer">
-                    <img src="assets/images/section6/stars.png" alt="Person1">
+                    <img src="assets/images/section6/stars.png" alt="Person1" class="stars">
                     <img src="assets/images/section6/belowImage.png" alt="Person1" class="below-image">
                 </div>
             </div>
@@ -431,7 +424,7 @@
     <div class="free-estimate-container">
         <div class="free-estimate">
             <div class="free-estimate-title">
-                <p><img src="assets/images/section3/checked.png" alt="group-work"> Get a Free Estimate</p>
+                <p><img src="assets/images/section3/checked.png" alt="group-work">  Get a Free Estimate</p>
                 <h1>Get an Insurance Quote to Get Standard!</h1>
             </div>
             <div class="navbar-insurance">
@@ -514,7 +507,7 @@
             </div>
         </div>
     </div>
-    <div>
+    <div class="bg-s8">
         <img src="assets\images\section8\Bg.png" alt="bg">
     </div>
 

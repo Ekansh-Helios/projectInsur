@@ -34,7 +34,7 @@
 .testimonial-card {
     position: relative;
     background-color: #fff;
-    padding: 20px;
+    padding: 20px 0;
     padding-bottom: 0;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -46,14 +46,14 @@
 .testimonial-upper-content {
     position: relative;
     display: flex;
-    align-items: center; 
+    align-items: center;
     margin-bottom: 20px;
 }
 
 .testimonial-upper-content img {
     position: absolute;
     top: -49px;
-    left: 11%;
+    left: 14%;
     transform: translateX(-50%);
     width: 80px;
     height: 80px;
@@ -75,18 +75,25 @@
     margin: 0;
     font-size: 12px;
     color: #777;
+    padding: 0 !important;
 }
 
 .testimonial-card p {
     font-size: 14px;
     color: #555;
+    padding: 0 20px 20px 20px;
 }
 
 .testimonial-card-footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: -27%;
+    margin-top: -20%;
+    margin-left: 4%;
+}
+
+.testimonial-card-footer .stars {
+    margin-bottom: 2px;
 }
 
 .below-image {

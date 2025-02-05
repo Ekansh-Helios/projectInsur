@@ -1,18 +1,24 @@
 .navbar{
     background-color: white;
     padding: 0;
+    overflow: visible;
+    position: relative;
+    max-height: 67px;
 }
 
 .custom-navbar {
     background-color: #7166F5;
-    width:106%;
+    width: 106%;
     padding: 0;
+    position: relative;
     display: flex;
+    overflow: visible;
     align-items: center;
     justify-content: space-between;
-    clip-path: polygon(0% 0%, 96% 0%, 100% 100%, 0% 100%);
     margin: auto;
-    border-radius: 0 59px 0 0;
+    /* border-radius: 0 41px 0 0; */
+    max-height: inherit;
+    /* clip-path: polygon(0 0, 95% 0, 100% 100%, 0% 100%);  */
 }
 
 .navbar-main {
@@ -46,9 +52,7 @@
 .trapezoid-wrapper {
     display: inline-block;
     clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
-    background-color: #7166F5;
-    box-shadow: 0px 4px 10px rgba(224, 12, 12, 0.2);
-    padding: 5px;
+    position: relative;
 }
 
 .trapezoid-image {
@@ -56,6 +60,7 @@
     height: 73px;
     object-fit: cover;
     clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .nav-link {
@@ -78,12 +83,18 @@
 }
 
 .d-flex {
-   padding-right: 40px;
+    background-color: #7166F5;
+    padding: 21px;
+    padding-left: 0;
+    margin-left: -1px;
+    clip-path: polygon(0 0, 65% 0, 100% 100%, 0% 100%);
+    border-radius: 0 59px 0 0;
 }
 
 .d-flex .btn {
     border-radius: 5px;
     padding: 0px 25px;
+    color: white;
 }
 
 .me-2 {

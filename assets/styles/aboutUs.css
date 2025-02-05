@@ -1,15 +1,13 @@
-/* Container to hold both left and right sections */
 .section-container {
     display: flex;
     justify-content: center;
     align-items: stretch;
-    gap: 40px; /* Space between left and right */
+    gap: 40px;
     max-width: 1200px;
     margin: auto;
-    padding: 50px 20px;
+    padding: 50px 6%;
 }
 
-/* Left Side */
 .left-side {
     display: flex;
     flex-direction: column;
@@ -21,7 +19,6 @@
     border-radius: 10px;
 }
 
-/* First Image - Smaller */
 .left-side .tilted-image:first-child img {
     width: 101%;
     position: absolute;
@@ -29,7 +26,6 @@
     top: -20px;
 }
 
-/* Second Image - Move below first */
 .left-side .tilted-image:nth-child(2) {
     position: absolute;
     top: 70%;
@@ -38,7 +34,6 @@
     width: 40%;
 }
 
-/* 40+ Years Experience Section - Below First Image */
 .left-side .info {
     position: absolute;
     top: 80%;
@@ -66,7 +61,6 @@
     margin-top: -7px;
 }
 
-/* Right Side */
 .right-side {
     width: 50%;
     background: #ffffff;
@@ -82,19 +76,16 @@
     font-weight: bold;
 }
 
-/* About Section */
 .right-side p img {
     margin-right: 10px;
     vertical-align: middle;
 }
 
-/* Sub-sections in Right Side */
 .right-side div {
     margin-bottom: 20px;
     margin-left: 4px;
 }
 
-/* Feature Boxes */
 .feature-box-container {
     display: flex;
     justify-content: space-between;
@@ -106,7 +97,6 @@
     gap: 10px;
     width: 50%;
     position: relative;
-    /* Border between feature boxes */
 }
 
 .feature-box p {
@@ -114,8 +104,8 @@
 }
 
 .feature-box:first-child {
-    border-right: 2px solid #d0cee3; /* Border color */
-    padding-right: 20px; /* Space from border */
+    border-right: 2px solid #d0cee3;
+    padding-right: 20px;
 }
 
 .feature-box h2 {
@@ -131,11 +121,10 @@
     width: 30px;
 }
 
-/* Checklist Items */
 .checklist {
     display: flex;
     flex-direction: column;
-    border: 2px solid #d0cee3; /* Border color */
+    border: 2px solid #d0cee3;
     padding: 5%;
     border-radius: 10px;
 }
@@ -150,7 +139,6 @@
     margin-right: 10px;
 }
 
-/* Button */
 .btn-primary {
     width: 200px;
     text-align: center;
@@ -166,7 +154,6 @@
     background-color: #5647e0;
 }
 
-/* Upper Image for any specific image */
 .upper-image {
     margin-top: -45px;
 }
