@@ -7,8 +7,8 @@
 
 .card-o{
     position: relative;
-    bottom: -70px;
-    margin-bottom: 10%;
+    bottom: -90px;
+    margin-bottom: 12%;
 }
 .col-md-3 {
     padding: 0;
@@ -16,15 +16,23 @@
 
 .card {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
 }
 
 .left-card {
     margin-right: -9px;
+    border-radius: 15px 0 0 15px;
+}
+
+.left-card .card {
+    border-radius: 15px 0 0 15px;
 }
 
 .right-card {
     margin-left: -9px;
+}
+
+.right-card .card {
+    border-radius: 0 15px 15px 0;
 }
 
 .card-image img {
@@ -51,9 +59,9 @@
     z-index: 1;
     transform: translateY(-20px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: #6154f1;
-    padding: 10px;
+    padding: 10px 8px;
 }
 
 .floating-card::before {

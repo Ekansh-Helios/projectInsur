@@ -3,11 +3,12 @@
     justify-content: space-between;
     margin-top: 10%;
     background-image: url('../../assets/images/section5/bg.png');
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
 }
 
-.why-choose-us .left-side, .right-side {
+.why-choose-us .left-side,
+.right-side {
     flex: 1;
     max-width: 50%;
     padding: 0;
@@ -20,9 +21,11 @@
 }
 
 .information {
-    max-width: 77%;
     padding: 10%;
-    margin-right: -95px;
+    margin: auto;
+    margin-left: 20%;
+    display: grid;
+    justify-content: space-between;
 }
 
 .information p {
@@ -39,24 +42,33 @@
     display: flex;
     align-items: center;
     margin: 20px 0;
-    background-color: #2d2b44;
+    background-color: #30304d;
     padding: 4%;
     border-radius: 14px;
+    max-width: 70%;
+    position: relative;
+    overflow: visible;
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
 }
 
 .save-money-icon {
     margin-bottom: 10%;
 }
-.save-money-icon p{
+
+.save-money-icon p {
     padding: 5%;
 }
 
 .save-money-left {
     flex: 1;
     align-items: center;
+    max-width: 50%;
 }
+
 .save-money-right {
     max-width: 50%;
+    position: relative;
+    overflow: visible;
 }
 
 .save-money-left div {
@@ -73,20 +85,29 @@
     margin: 0;
 }
 
+.save-money-right img {
+    position: absolute;
+    right: -225px;
+    top: -167px;
+    width: auto;
+}
+
 .sec5-bottom .btn-primary {
     background-color: #f8f9fa;
     color: #141313;
     border: none;
     cursor: pointer;
     max-width: 37%;
-    height: 20%;
+    height: 36px;
     font-size: 13px;
     font-weight: bold;
     margin-top: 2%;
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
+    color: #7166F5;
+    border:1px solid #7166F5;
+    background-color: white;
 }
 
 .why-choose-us .right-side img {
@@ -94,20 +115,21 @@
     margin-top: -1px;
 }
 
-.sec5-bottom{
+.sec5-bottom {
     display: flex;
     justify-content: space-between;
 }
 
-.sec5-bottom h1{
+.sec5-bottom h1 {
     padding-top: 4px;
     padding-left: 20px;
     padding-right: 0;
     font-size: 40px;
 }
 
-.sec5-bottom p{
+.sec5-bottom p {
     margin: auto;
-    max-width: 27%;
+    max-width: 18%;
     color: #58587e;
+    margin-left: 27px;
 }

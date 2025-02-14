@@ -13,7 +13,6 @@
 .main-f {
     display: flex;
     gap: 32px;
-    padding: 20px 86px;
     justify-content: center;
     margin-bottom: 7%;
 }
@@ -21,11 +20,6 @@
 .left, .middle-f, .right-f {
     flex: 1;
     margin: 0 10px;
-    max-width: 30%;
-}
-
-.left {
-    max-width: 20%;
 }
 
 .middle-f {
@@ -56,6 +50,7 @@
 
 .g-f {
     display: flex;
+    margin-top: 4%;
 }
 
 .a-f {
@@ -87,12 +82,10 @@
 }
 
 .left h2, .middle-f h2, .right-f h2 {
-    font-size: 20px;
     margin-bottom: 15px;
 }
 
 .left p, .middle-f p, .right-f p {
-    font-size: 12px;
     line-height: 1.4;
 }
 
@@ -126,6 +119,8 @@
     max-width: 45px;
     border-radius: 30px;
     background: #afa5a536;
+    border-color: transparent;
+    padding: 6px 11px;
 }
 
 .middle-f p {
@@ -137,7 +132,6 @@
 .right-f {
     display: flex;
     gap: 47px;
-    max-width: fit-content;
 }
 
 .right-f .explore, .right-f .gallery {
@@ -149,7 +143,6 @@
     color: #bdb3b3;
     text-decoration: none;
     margin-bottom: 8px;
-    font-size: 12px;
 }
 
 .right-f .gallery-images {
