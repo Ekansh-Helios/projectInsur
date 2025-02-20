@@ -34,6 +34,9 @@
     position: relative;
 }
 
+.team-members-cards .card{
+    padding: 0;
+}
 .team-member-card {
     background-color: #fff;
     border-radius: 10px;

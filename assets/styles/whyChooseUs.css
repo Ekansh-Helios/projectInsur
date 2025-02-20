@@ -21,7 +21,7 @@
 }
 
 .information {
-    padding: 10%;
+    padding: 0 5% 0 10%;
     margin: auto;
     margin-left: 20%;
     display: grid;
@@ -30,18 +30,19 @@
 
 .information p {
     font-size: 13px;
-    color: #fffdfd;
+    color: #8e8e95;
 }
 
 .information h1 {
-    font-size: 24px;
+    /* font-size: 24px; */
     color: #fffdfd;
+    font-weight: bold;
 }
 
 .save-money {
     display: flex;
     align-items: center;
-    margin: 20px 0;
+    margin: 2% 0;
     background-color: #30304d;
     padding: 4%;
     border-radius: 14px;
@@ -57,6 +58,8 @@
 
 .save-money-icon p {
     padding: 5%;
+    color: white;
+    font-weight: bold;
 }
 
 .save-money-left {

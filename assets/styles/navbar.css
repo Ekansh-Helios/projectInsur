@@ -16,9 +16,7 @@
     align-items: center;
     justify-content: space-between;
     margin: auto;
-    /* border-radius: 0 41px 0 0; */
     max-height: inherit;
-    /* clip-path: polygon(0 0, 95% 0, 100% 100%, 0% 100%);  */
 }
 
 .navbar-main {
@@ -53,6 +51,8 @@
     display: inline-block;
     clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
     position: relative;
+    left: 2%;
+    margin-right: 2%;
 }
 
 .trapezoid-image {

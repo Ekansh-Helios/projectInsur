@@ -3,7 +3,7 @@
     text-align: center;
     width: 100%;
     box-sizing: border-box;
-    margin-bottom: 11%;
+    margin-bottom: 9%;
 }
 
 .article-title p {
@@ -18,12 +18,13 @@
     margin-right: 10px;
 }
 
-.article-title h1 {
+.article-title h2 {
     margin: 20px 0;
-    font-size: 32px;
+    /* font-size: 32px; */
     color: #333;
     max-width: 34%;
     margin: 0 auto;
+    font-weight: bold;
 }
 
 .article-cards {
@@ -48,6 +49,7 @@
 .article-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .article-card img {

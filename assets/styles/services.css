@@ -2,8 +2,10 @@
 .services-wrapper {
     width: 100%;
     text-align: center;
-    margin-top: 20%;
+    margin-top: 7%;
     padding: 8%;
+    padding-top: 7%;
+    padding-bottom: 10%;
     position: relative;
     background-image: url("../../assets/images/section1/Imagebg.png");
     background-color: #e7e7e7;
@@ -47,13 +49,13 @@
 
 /* Individual Custom Card */
 .custom-card {
-    width: 32%;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 15px;
     text-align: left;
     transition: transform 0.3s ease-in-out;
+    position: relative;
 }
 
 .custom-card:hover {
@@ -65,11 +67,6 @@
 .card-main-img {
     width: 100%;
     border-radius: 8px;
-}
-
-/* Card Content */
-.card-content {
-    padding: 10px 0;
 }
 
 /* Card Header - Small Icon and Title */
@@ -89,15 +86,15 @@
 
 /* Card Heading */
 .card-heading {
-    margin-left: 22px;
-    font-size: 23px;
+    margin-left: 5%;
     font-weight: bold;
     color: #222;
+    margin-bottom: 0;
+    font-size: 1.1rem;
 }
 
 /* Card Description */
 .card-description {
-    font-size: 14px;
     color: #666;
     line-height: 1.4;
 }
@@ -106,17 +103,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
     width: 55%;
     margin-left: 14%;
     background-color: #7166f5;
-    max-height: 86px;
+    max-height: 15%;
     position: absolute;
     padding: 2%;
-    bottom: -30px;
+    bottom: -10%;
     overflow: visible;
     border-radius: 10px;
-    background-image: url("../images/section4/Section.png");
+    background-image: url(../images/section4/Section.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -124,22 +120,23 @@
 
 .below-box img {
     position: absolute;
-    top: -20px;
-    transform: translateX(21%);
-    max-width: 100px;
+    top: -25%;
+    max-width: 19%;
     height: auto;
 }
 
-.below-box h1 {
+.below-box-image{
+    margin-right: 20%;
+}
+.below-box h4 {
     color: white;
-    font-size: 20px;
     font-weight: bold;
     margin-left: 10px;
 }
 
 .below-box p {
-    color: white;
-    font-size: 10px;
+    color: #D0CCFF;
+    font-size: 73%;
     margin-left: 10px;
     margin-bottom: 0;
 }
@@ -150,6 +147,7 @@
     background-color: white;
     color: black;
     font-size: 13px;
+    border-color: white;
 }
 
 .below-box .btn-primary:hover {
@@ -165,6 +163,16 @@
     text-align: left;
 }
 
+.service-card-bottom{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.service-card-bottom img{
+    width: 77px;
+    height: auto;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .card-list {

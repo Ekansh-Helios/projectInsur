@@ -81,7 +81,7 @@
 .testimonial-card p {
     font-size: 14px;
     color: #555;
-    padding: 0 20px 20px 20px;
+    padding: 0 20px 0px 20px;
 }
 
 .testimonial-card-footer {
@@ -89,17 +89,18 @@
     align-items: center;
     justify-content: space-between;
     margin-top: -20%;
-    margin-left: 4%;
+    /* margin-left: 4%; */
 }
 
 .testimonial-card-footer .stars {
     margin-bottom: 2px;
+    padding-left: 4%;
 }
 
 .below-image {
     height: 204px;
     width: auto;
-    margin-left: -36%;
+    margin-left: -38%;
 }
 
 .testimonial-card-footer img:not(.below-image) {

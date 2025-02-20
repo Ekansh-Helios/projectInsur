@@ -9,13 +9,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- Custom CSS -->
     <link href="styles.css" rel="stylesheet">
     <link href="assets\styles\topBar.css" rel="stylesheet">
     <link href="assets\styles\navbar.css" rel="stylesheet">
     <link href="assets\styles\carousel.css" rel="stylesheet">
-    <link href="assets\styles\cards.css" rel="stylesheet">
+    <link href="assets\styles\floatingCards.css" rel="stylesheet">
     <link href="assets\styles\aboutUs.css" rel="stylesheet">
     <link href="assets\styles\services.css" rel="stylesheet">
     <link href="assets\styles\whyChooseUs.css" rel="stylesheet">
@@ -107,14 +108,12 @@
             <div class="carousel-item active">
                 <div class="carousel-content">
                     <!-- Left Side: Text Content -->
-                    <div class="container">
-                        <div class="carousel-text">
-                            <div class="text-wrapper">
-                                <h2>Life More Relaxed with Smart Insurance</h2>
-                                <p>There are many variations of passages of Lorem Ip available, but the majority have
-                                    suffered aeration in some form.</p>
-                                <a href="#" class="btn btn-primary">Discover More</a>
-                            </div>
+                    <div class="carousel-text">
+                        <div class="text-wrapper">
+                            <h2>Life More Relaxed with Smart Insurance</h2>
+                            <p>There are many variations of passages of Lorem Ip available, but the majority have
+                                suffered aeration in some form.</p>
+                            <a href="#" class="btn btn-primary">Discover More</a>
                         </div>
                     </div>
                 </div>
@@ -274,7 +273,7 @@
         </div>
         <div class="card-list">
             <!-- Card 1 -->
-            <div class="custom-card">
+            <div class="custom-card col-4">
                 <div class="card-float">
                     <img src="assets/images/section4/car.png" class="card-main-img" alt="Car Insurance">
                     <div class="card-head">
@@ -286,9 +285,12 @@
                     <p class="card-description">There are many variations the off passages of Lorem Ipsum free thing
                         avagtilable, but majority</p>
                 </div>
+                <div class="service-card-bottom">
+                    <img src="assets/images/section4/cardBottom.png" alt="bottom">
+                </div>
             </div>
             <!-- Card 2 -->
-            <div class="custom-card">
+            <div class="custom-card col-4">
                 <div class="card-float">
                     <img src="assets/images/section4/family.png" class="card-main-img" alt="Car Insurance">
                     <div class="card-head">
@@ -300,9 +302,12 @@
                     <p class="card-description">There are many variations the off passages of Lorem Ipsum free thing
                         avagtilable, but majority</p>
                 </div>
+                <div class="service-card-bottom">
+                    <img src="assets/images/section4/cardBottom.png" alt="bottom">
+                </div>
             </div>
             <!-- Card 3 -->
-            <div class="custom-card">
+            <div class="custom-card col-4">
                 <div class="card-float">
                     <img src="assets/images/section4/group.png" class="card-main-img" alt="Car Insurance">
                     <div class="card-head">
@@ -313,6 +318,9 @@
                 <div class="card-content">
                     <p class="card-description">There are many variations the off passages of Lorem Ipsum free thing
                         avagtilable, but majority.</p>
+                </div>
+                <div class="service-card-bottom">
+                    <img src="assets/images/section4/cardBottom.png" alt="bottom">
                 </div>
             </div>
             <!-- Card-4 -->
@@ -346,12 +354,12 @@
         </div>
 
         <div class="below-box">
-            <div>
+            <div class="below-box-image">
                 <img src="assets/images/section4/insurance.png" class="card-main-img" alt="Car Insurance">
             </div>
             <div class="below-box-content">
                 <p>Be Happy to Get Insurance</p>
-                <h1>Start Tracking Your Claims</h1>
+                <h4>Start Tracking Your Claims</h4>
             </div>
             <button type="button" class="btn btn-primary">Discover More</button>
         </div>
@@ -487,6 +495,67 @@
     </section>
 
     <!-- team members - Section8 -->
+    <!-- <section>
+        <div>
+            <div class="team-members">
+                <div class="team-members-title">
+                    <p><img src="assets/images/section3/checked.png" alt="group-work"> Our Team Member</p>
+                    <h1>Meet Our Experienced Team People</h1>
+                </div>
+                <div class="swiper mySwiper">
+                    <div class="team-members-cards swiper-wrapper">
+                        <div class="team-member-card card swiper-slide">
+                            <i class="bi bi-share-fill share-icon"></i>
+                            <img src="assets/images/section8/team-7-1.jpg.png" alt="Team Member">
+                            <div class="team-member-info card-body">
+                                <h5 class="card-title">Robert Smith</h5>
+                                <p class="card-text">Marketing Manager</p>
+                            </div>
+                        </div>
+                        <div class="team-member-card card swiper-slide">
+                            <i class="bi bi-share-fill share-icon"></i>
+                            <img src="assets/images/section8/team-7-2.jpg.png" alt="Team Member">
+                            <div class="team-member-info card-body">
+                                <h5 class="card-title">Luna Martin</h5>
+                                <p class="card-text">Web Developer</p>
+                            </div>
+                        </div>
+                        <div class="team-member-card card swiper-slide">
+                            <i class="bi bi-share-fill share-icon"></i>
+                            <img src="assets/images/section8/team-7-3.jpg.png" alt="Team Member">
+                            <div class="team-member-info card-body">
+                                <h5 class="card-title">John Doe</h5>
+                                <p class="card-text">Web Designer</p>
+                            </div>
+                        </div>
+                        <div class="team-member-card card swiper-slide">
+                            <i class="bi bi-share-fill share-icon"></i>
+                            <img src="assets/images/section8/team-7-3.jpg.png" alt="Team Member">
+                            <div class="team-member-info card-body">
+                                <h5 class="card-title">John Doe</h5>
+                                <p class="card-text">Web Designer</p>
+                            </div>
+                        </div>
+                         <div class="team-member-card card swiper-slide">
+                            <i class="bi bi-share-fill share-icon"></i>
+                            <img src="assets/images/section8/team-7-3.jpg.png" alt="Team Member">
+                            <div class="team-member-info card-body">
+                                <h5 class="card-title">John Doe</h5>
+                                <p class="card-text">Web Designer</p>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-s8">
+            <img src="assets\images\section8\Bg.png" alt="bg">
+        </div>
+    </section> -->
+
+    <!-- team members - Section8 -->
     <section>
         <div>
             <div class="team-members">
@@ -531,8 +600,8 @@
     <!-- article - Section9 -->
     <section class="article container">
         <div class="article-title">
-            <p><img src="assets/images/section3/checked.png" alt="group-work"> Articles</p>
-            <h1>Latest News & Articles from the Blog Posts</h1>
+            <p><img src="assets/images/section3/checked.png" alt="group-work"> Article</p>
+            <h2>Latest News & Articles from the Blog Posts</h2>
         </div>
         <div class="article-cards">
             <div class="article-card">
@@ -600,7 +669,7 @@
         <div class="main-f container">
             <div class="row justify-content-center">
                 <div class="left col-3">
-                    <h2>About</h2>
+                    <h3>About</h3>
                     <p>There are many variations of passages of Lorem Ip available, but the majority have</p>
                     <div class="email-input">
                         <div class="input-group">
@@ -644,7 +713,7 @@
 
                 <div class="right-f col-5">
                     <div class="explore">
-                        <h2>Explore</h2>
+                        <h3>Explore</h3>
                         <a href="#">About</a>
                         <a href="#">Insurance</a>
                         <a href="#">Latest Portfolio</a>
@@ -652,7 +721,7 @@
                         <a href="#">Get In Touch</a>
                     </div>
                     <div class="gallery">
-                        <h2>Gallery</h2>
+                        <h3>Gallery</h3>
                         <div class="gallery-images">
                             <img src="assets/images/footer/img-1.jpg.png" alt="Gallery Image">
                             <img src="assets/images/footer/img-2.jpg.png" alt="Gallery Image">
@@ -668,12 +737,20 @@
         </div>
     </footer>
 
+    <!-- Floating Button for scrolling to top-->
+    <button id="scrollToTopBtn" class="scroll-to-top-btn">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/scripts/progressBar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
+    <script src="assets/scripts/scrollToTop.js"></script>
+    <script src="assets/scripts/teamSlider.js"></script>
 </body>
 
 </html>

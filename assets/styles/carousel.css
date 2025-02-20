@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 545px;
+    height: 90vh;;
     padding: 50px;
     background: #d5d3d3;
     background-image: url("../../assets/images/section1/Imagebg.png");
@@ -12,17 +12,22 @@
 .carousel-text {
     width: 50%;
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     padding-right: 50px;
+    margin-left: 9%;
 }
 
 .text-wrapper {
-    max-width: 400px;
+    max-width: 80%;
     text-align: left;
 }
 
+.text-wrapper .btn-primary{
+    border-color: #7166F5;
+}
+
 .carousel-text h2 {
-    font-size: 36px;
+    font-size: 4vw;
     font-weight: bold;
     color: #333;
 }
@@ -72,11 +77,12 @@
 }
 
 .carousel-control-prev {
-    top: 46%;
+    top: 18vw;
+    /* margin-bottom: 2%; */
 }
 
 .carousel-control-next {
-    top: 54%;
+    top: 22vw;
 }
 
 .carousel-control-prev span,

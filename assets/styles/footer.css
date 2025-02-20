@@ -3,7 +3,7 @@
     flex-direction: column;
     background-color: #211F38;
     color: #fff;
-    padding: 80px 0 0 0;
+    padding: 6% 0 0 0;
     background-image: url(../../assets/images/footer/Footer.png);
     background-size: contain;
     background-position: center;
@@ -14,7 +14,7 @@
     display: flex;
     gap: 32px;
     justify-content: center;
-    margin-bottom: 7%;
+    margin-bottom: 5%;
 }
 
 .left, .middle-f, .right-f {
@@ -191,4 +191,8 @@
 .e-f a {
     text-decoration: none;
     color: white;
+}
+
+.gallery-images:hover{
+    cursor: pointer;
 }
