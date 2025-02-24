@@ -5,7 +5,6 @@
     gap: 40px;
     max-width: 1200px;
     margin: auto;
-    /* padding: 50px 6%; */
 }
 
 .section-container .container{
@@ -17,14 +16,11 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    /* width: 50%; */
     background: white;
-    /* padding: 20px; */
     border-radius: 10px;
 }
 
 .left-side .tilted-image:first-child img {
-    /* width: 101%; */
     position: absolute;
     left: -70px;
     top: -60px;
@@ -35,7 +31,6 @@
     top: 56%;
     left: 33%;
     transform: translate(-50%, -84px);
-    /* width: 40%; */
 }
 
 .left-side .info {
@@ -156,6 +151,7 @@
 
 .right-side .btn-primary:hover {
     background-color: #5647e0;
+    color: white;
 }
 
 

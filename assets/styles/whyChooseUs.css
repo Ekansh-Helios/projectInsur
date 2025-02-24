@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 10%;
-    background-image: url('../../assets/images/section5/bg.png');
+    background-image: url('../../assets/images/WhyChooseUs-section5/bg.png');
     background-size: cover;
     background-position: center;
 }
@@ -34,7 +34,6 @@
 }
 
 .information h1 {
-    /* font-size: 24px; */
     color: #fffdfd;
     font-weight: bold;
 }
