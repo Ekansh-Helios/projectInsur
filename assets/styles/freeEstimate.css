@@ -176,3 +176,68 @@ form .btn-primary:hover {
     border:1px solid #7166F5;
     background-color: white;
 }
+
+/* Style for WebKit browsers (Chrome, Safari) */
+#progressRange::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: linear-gradient(to right, #7166f5 60%, rgb(233, 236, 239) 0%);
+    border-radius: 5px;
+}
+
+#progressRange::-webkit-slider-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 19%;
+    background: black;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -6px; /* Adjust to align thumb with track */
+}
+
+/* Style for Firefox */
+#progressRange::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: linear-gradient(to right, rgb(83, 97, 112) 60%, rgb(233, 236, 239) 50%);
+    border-radius: 5px;
+}
+
+#progressRange::-moz-range-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 60%;
+    background: rgb(83, 97, 112);
+    cursor: pointer;
+}
+
+/* Style for Internet Explorer and Edge */
+#progressRange::-ms-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+#progressRange::-ms-fill-lower {
+    background: rgb(83, 97, 112);
+    border-radius: 5px;
+}
+
+#progressRange::-ms-fill-upper {
+    background: rgb(233, 236, 239);
+    border-radius: 5px;
+}
+
+#progressRange::-ms-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: rgb(83, 97, 112);
+    cursor: pointer;
+    margin-top: 0; /* Adjust to align thumb with track */
+}

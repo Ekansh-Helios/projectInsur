@@ -17,7 +17,7 @@
 .title-section {
     margin-bottom: 20px;
     text-align: left;
-    margin-left: 17%;
+    margin-left: 19%;
 }
 
 .main-title {
@@ -37,9 +37,7 @@
 .card-list {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
     max-width: 65%;
-    margin-left: 17%;
 }
 
 .card-float {
@@ -125,9 +123,10 @@
     height: auto;
 }
 
-.below-box-image{
+.below-box-image {
     margin-right: 20%;
 }
+
 .below-box h4 {
     color: white;
     font-weight: bold;
@@ -163,16 +162,83 @@
     text-align: left;
 }
 
-.service-card-bottom{
+.service-card-bottom {
     position: absolute;
     bottom: 0;
     right: 0;
 }
 
-.service-card-bottom img{
+.service-card-bottom img {
     width: 77px;
     height: auto;
 }
+
+.services-wrapper .swiper {
+    width: 65%;
+    height: 100%;
+    padding: 1%;
+    margin-top: 1%;
+}
+
+.title-nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 74%;
+}
+
+.swiper-nav {
+    display: flex;
+    padding: 1%;
+    width: 21%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    padding: 8% 15%;
+    margin: 0 12%;
+    align-items: center;
+    background: white;
+    border-radius: 99%;
+    justify-content: center;
+    top: 0;
+    width: auto;
+    height: auto;
+    color: #000;
+}
+
+/* Scrollbar Track (background) */
+.swiper-scrollbar {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    height: 5px;
+}
+
+/* Scrollbar Handle (draggable part) */
+.swiper-scrollbar-drag {
+    background: #7166f5;
+}
+
+
+.swiper-horizontal>.swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+    position: relative;
+    left: var(--swiper-scrollbar-sides-offset, 1%);
+    bottom: var(--swiper-scrollbar-bottom, 4px);
+    z-index: 50;
+    height: var(--swiper-scrollbar-size, 4px);
+    width: calc(100% - 2* var(--swiper-scrollbar-sides-offset, 1%));
+    margin-bottom: 6%;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 35px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .card-list {
@@ -183,4 +249,17 @@
     .custom-card {
         width: 90%;
     }
+
 }
+
+@media (max-width: 1670px) {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        padding: 23% 21%;
+        top: 37%;
+        height: 0;
+        width: 0;
+    }
+}
+
